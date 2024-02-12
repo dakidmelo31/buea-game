@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.cta{
+    padding: 100px 20px;
+    background-color: #00aa00;
+    color: #f5f5f5;
+}
+.header{
+    min-height: 100dvh;
+    display: flex;
+    width: 100vw;
+    height: 100dvh;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #00aa00;
+    overflow-x: hidden;
+    *{
+        z-index: 2;
+        position: relative;
+    }
+h2{
+    font-size: 4rem;
+    -webkit-text-stroke: 2px #d8ffd8;
+    color: transparent;
+    font-family: Poppins;
+    text-align: center;
+}
+    img{
+        width: 50%;
+        perspective-origin: 3d;
+        position: relative;
+        z-index: 1;
+
+    }
+}
+
+.links{
+    position: fixed;
+    bottom: 70px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+}
+.links a:nth-of-type(odd){
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    backdrop-filter: blur(8px);
+    color: #fff;
+    text-shadow: 1px 1px 3px #0005;
+}
+
+.links a{
+    outline: none;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 25px;
+    padding: 20px 6px;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    width: 180px;
+    border-radius: 5px;
+}
+
+footer{
+
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: #00aa00;
+    color: #aaa;
+    padding: 80px 20px;
+    address{
+        font-style: normal;
+        font-family: monospace;
+        color: #fff;
+    }
+    a{
+        color: #fff;
+        font-family: jost, Arial, Helvetica, sans-serif;
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+    }
+    .description{
+        color: #fff;
+        font-family: Poppins, jost, Arial, Helvetica, sans-serif;
+        padding: 20px 0;
+        text-align: justify;
+    }
+    .circle{
+        width: 50px;
+        height:50px;
+        position: relative;
+        background-color: #00aa00;
+        z-index: 0;
+        border-radius: 50%;
+    }
+    p{
+        position: relative;
+        z-index: 2;
+        opacity: 0.0;
+    }
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+    width: 2px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+}
+
+@media screen and(min-width: 1024px) {
+    .header img#img{
+        height: 80dvh;
+        object-fit: contain;
+        width: fit-content;
+
+    }
+}
