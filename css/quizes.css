@@ -35,6 +35,138 @@ body {
   border-radius: 16px;
   background-color: #fff;
 }
+.page header h2 button {
+  background-color: #fff;
+  margin-left: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.031372549);
+  padding: 4px 6px;
+  border-radius: 8px;
+}
 .page header h2 span {
   font-weight: 600;
+}
+
+.navbar .leftbar {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 10px;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.navbar .l1 {
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+}
+.navbar .l2 {
+  width: 25px;
+  top: 15px;
+  height: 3px;
+  position: relative;
+  background-color: #000;
+  left: 0px;
+}
+.navbar .l3 {
+  left: 15px;
+  width: 15px;
+  top: 30px;
+  height: 1px;
+  position: relative;
+  background-color: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.dash-card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40dvh;
+  width: 90%;
+  margin: 15px;
+  background-color: #fff;
+  box-shadow: 2px 4px 10px rgba(170, 170, 170, 0.0039215686), 2px 10px 26px rgba(170, 170, 170, 0.0274509804), 16px 16px 40px rgba(170, 170, 170, 0.0039215686);
+  color: #000;
+  padding: 25px 10px;
+  border-radius: 56px;
+}
+.dash-card span {
+  font-size: 7rem;
+}
+.dash-card span.total {
+  font-size: 16px;
+}
+.dash-card span.of {
+  font-size: 10px;
+}
+
+.spacer {
+  height: 25px;
+}
+
+.title {
+  width: 100%;
+  padding: 36px;
+}
+.title h2 {
+  font-size: 16px;
+  font-family: poppins;
+}
+
+.quiz-list {
+  width: 90%;
+  padding: 10px 0;
+  background-color: #fff;
+  min-height: 200px;
+  border-radius: 16px;
+  margin: 26px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.quiz-list a {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 55px;
+  text-align: left;
+  border-bottom: 1px solid rgba(234, 234, 234, 0.4);
+}
+.quiz-list a .arrow {
+  transition: 0.2s ease-in-out;
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-list a .arrow:hover {
+  color: #888;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.sidebar {
+  height: 100dvh;
+  width: 70vw;
+  position: fixed;
+  right: -120vw;
+  background-color: #fff;
+  padding: 16px 25px;
+  padding-top: 50px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: -10px -15px 25px rgba(0, 0, 0, 0.0235294118);
+}
+.sidebar h2 {
+  font-weight: 400;
+  font-size: 16px;
 }/*# sourceMappingURL=quizes.css.map */
